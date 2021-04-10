@@ -1,0 +1,56 @@
+<?php
+
+return [
+
+    'comment title' => 'Ashkan Comment App',
+    'delete' => 'delete',
+    'update' => 'update',
+    'Comments' => 'Comments',
+    'Add comment' => 'Add comment',
+    '(You need to customize this section for the model for which the comments are commented (Article  , Post , Course ...))' => '(You need to customize this section for the model for which the comments are commented)',
+    'Intended comment has been deleted successfully.' => 'Intended comment has been deleted successfully.',
+    'Congratulations' => 'Congratulations',
+    'OK' => 'OK',
+    'Anonymous' => 'Anonymous',
+    '🤔Do you want to delete this comment ?!' => '🤔Do you want to delete this comment ?!',
+    'cancel' => 'cancel',
+    'Warning' => 'Warning',
+    'title' => 'title',
+    'user' => 'user',
+    'model (Article | Post)' => 'model (Article | Post)',
+    'content' => 'content',
+    'like' => 'like',
+    'dislike' => 'dislike',
+    'answer' => 'answer',
+    'commentable_id' => 'commentable_id',
+    'model' => 'model',
+    'operation' => 'operation',
+    'created_at' => 'created_at',
+    'none' => 'none',
+    'Back' => 'Back',
+    'Post New Comment' => 'Post New Comment',
+    'Submit Comment' => 'Submit Comment',
+    'Answer Comment'  => 'Answer Comment',
+    '?Are you sure' => '?Are you sure',
+    'You can not revert your action' => 'You can not revert your action',
+    '!Yes Delete it' => '!Yes Delete it',
+    '!No, Keep it' => '!No, Keep it',
+    'Reply' => 'Reply',
+    'Edit' => 'Edit',
+    'Delete' => 'Delete',
+    'Dear User , Your Comment has been successfully sent' => 'Dear User , Your Comment has been successfully sent',
+    'Dear User , Your Comment has been successfully deleted' => 'Dear User , Your Comment has been successfully deleted',
+    'Dear User , Your Comment has been successfully updated' => 'Dear User , Your Comment has been successfully updated',
+    'Dear User , Your Answer to this comment has been successfully sent' => 'Dear User , Your Answer to this comment has been successfully sent',
+    'There is a Problem' => 'There is a Problem',
+    'No Comment have been commented yet!' => '!No Comment have been commented yet',
+    'captcha' => 'captcha',
+
+    'validations' => [
+        'required' => 'The :field field is required.',
+        'max' => 'The :field must not be greater than :max characters.',
+        'integer' => 'The :field must be integer type.',
+        'invalid captcha' => 'invalid captcha!'
+    ]
+
+];

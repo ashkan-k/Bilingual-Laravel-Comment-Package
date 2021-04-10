@@ -1,0 +1,43 @@
+{
+    "name": "ashkan/comment",
+    "description": "bilingual comment package (persian and english language)",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "ashkan karimi",
+            "email": "karimiashkan8181@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Ashkan\\Comment\\": "src/"
+        },
+        "files": [
+           "src/helpers/comment.php"
+        ]
+    },
+    "require": {
+        "php": "^7.3|^8.0",
+        "laravel/framework": "^8.12",
+        "hekmatinasser/verta": "^1.11",
+        "fruitcake/laravel-cors": "^2.0",
+        "mews/captcha": "^3.2"
+    },
+
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Ashkan\\Comment\\CommentServiceProvider",
+                "Mews\\Captcha\\CaptchaServiceProvider"
+            ],
+            "aliases": {
+                "CommentFacade" : "\\Ashkan\\Comment\\Facades\\CommentFacade",
+                "LikeDisLikeFacade" : "\\Ashkan\\Comment\\Facades\\LikeDisLikeFacade",
+                "Captcha" : "Mews\\Captcha\\Facades\\Captcha::class"
+            }
+        }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.5"
+    }
+}
