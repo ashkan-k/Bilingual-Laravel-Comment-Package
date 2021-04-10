@@ -25,14 +25,14 @@ Set requirements
 Add  'use HasComments;' to COMMENTER model like 'User'
 
 
-use Ashkan\Comment\Traits\HasComments;
+use Ashkan\Comment\Traits\CanComment;
 
 class User extends Authenticatable
 {
     use HasFactory, Notifiable;
     
     # important
-    use HasComments;
+    use CanComment;
 
     protected $fillable = [
         'name',
@@ -45,14 +45,14 @@ class User extends Authenticatable
 Add  'use HasCommentable;' to COMMENTABLE model like 'Post , Article ,...'
 
 
-use Ashkan\Comment\Traits\HasCommentable;
+use Ashkan\Comment\Traits\HasComments;
 
 class Post extends Model
 {
     use HasFactory;
     
     # important
-    use HasCommentable;
+    use HasComments;
 
     protected $fillable = [
         ...
