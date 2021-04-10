@@ -68,7 +68,7 @@ return [
 
         'Captcha' => true,
 
-        'SearchBox' => false,
+        'SearchBox' => true,
 
         'Commenter Display Name Field' => 'name',
 
