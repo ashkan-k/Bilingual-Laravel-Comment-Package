@@ -22,7 +22,7 @@ php artisan migrate
 Set requirements
 
 ```bash
-Add  'use CanComment;' to COMMENTER model like 'User'
+Add  'use HasComments;' to COMMENTER model like 'User'
 
 
 use Ashkan\Comment\Traits\HasComments;
@@ -32,7 +32,7 @@ class User extends Authenticatable
     use HasFactory, Notifiable;
     
     # important
-    use CanComment;
+    use HasComments;
 
     protected $fillable = [
         'name',
@@ -42,7 +42,7 @@ class User extends Authenticatable
 ```
 
 ```bash
-Add  'use HasComments;' to COMMENTABLE model like 'Post , Article ,...'
+Add  'use HasCommentable;' to COMMENTABLE model like 'Post , Article ,...'
 
 
 use Ashkan\Comment\Traits\HasCommentable;
@@ -52,7 +52,7 @@ class Post extends Model
     use HasFactory;
     
     # important
-    use HasComments;
+    use HasCommentable;
 
     protected $fillable = [
         ...
