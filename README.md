@@ -1,6 +1,6 @@
 ## PreView
 
-![Blazar](src/assets/Documention/Comment3.png?raw=true "Screenshot")
+![Bilingual-Laravel-Package](src/assets/Documention/Comment3.png?raw=true "Screenshot")
 
 
 # Bilingual Comment Laravel Package
