@@ -13,6 +13,11 @@ Free Bilingual Comment Package For having a complte comment part in your project
 composer require ashkan/comment
 ```
 
+## Install or Enable 'gd' extension:
+```bash
+;extension=gd
+```
+
 Publish Package
 ```bash
 php artisan vendor:publish --provider="Ashkan\Comment\CommentServiceProvider"
