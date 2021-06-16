@@ -1,4 +1,5 @@
 <meta name="csrf-token" content="{{ csrf_token() }}">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
 {{--Bootstrap--}}
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
@@ -117,7 +118,7 @@
                                     <li v-for="item in comments['data']" class="media">
                                         <a class="pull-right" href="#">
 
-                                            <img class="media-object img-circle"
+                                            <img class="media-object img-circle image"
                                                  :src="ShowImage(item.user)"
                                                  alt="profile">
                                         </a>
@@ -128,12 +129,17 @@
                                                         class="glyphicon glyphicon-user"></span>
                                                     @{{ DisplayUserName(item.user) }}
                                                 </h4>
+
+                                                <span>&nbsp &nbsp</span>
+
                                                 <ul class="media-date text-uppercase reviews list-inline">
                                                     @{{ item.created_at }}
                                                 </ul>
                                                 <h3 class="media-comment">
                                                     @{{ item.title }}
                                                 </h3>
+
+                                                <br>
 
                                                 @if(config('comment.options.Editor') !== 3)
                                                     <p class="media-comment" v-html="item.content">
@@ -218,7 +224,7 @@
                                             <ul class="media-list">
                                                 <li class="media media-replied">
                                                     <a class="pull-right" href="#">
-                                                        <img class="media-object img-circle"
+                                                        <img class="media-object img-circle image"
                                                              :src="ShowImage(item.answer.user)"
                                                              alt="profile">
                                                     </a>
@@ -228,12 +234,17 @@
                                                                     class="glyphicon glyphicon-user"></span>
                                                                 @{{ DisplayUserName(item.answer.user) }}
                                                             </h4>
+
+                                                            <span>&nbsp &nbsp</span>
+
                                                             <ul class="media-date text-uppercase reviews list-inline">
                                                                 @{{ item.answer.created_at }}
                                                             </ul>
                                                             <h3 class="media-comment">
                                                                 @{{ item.answer.title }}
                                                             </h3>
+
+                                                            <br>
 
                                                             @if(config('comment.options.Editor') !== 3)
                                                                 <p class="media-comment" v-html="item.answer.content">
